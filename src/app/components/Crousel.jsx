@@ -83,7 +83,7 @@ const Crousel = () => {
     return;
   }
   return (
-    <div className=" w-full">
+    <div className=" w-full h-[50vh] sm:h-full">
       <Carousel {...settings} className=" -z-0">
         <Wrap className="relative">
           <Image alt="img" src={Slide4} fill />

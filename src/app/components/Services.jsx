@@ -23,7 +23,7 @@ const Services = () => {
         <Image src="/images/services-section.jpg" fill alt="abc" />
       </div>
       <div className=" w-full h-full absolute top-0 left-0 bg-gradient-to-b from-gray-100 via-transparent to-gray-100"></div>
-      <div className=" w-full mx-auto h-full py-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10 relative">
+      <div className=" w-full mx-auto h-full py-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10 relative">
         {data.map((service, index) => (
           <React.Fragment key={index}>
             <CardCompnonent
