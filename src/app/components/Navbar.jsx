@@ -56,27 +56,25 @@ const Navbar = () => {
               <></>
             )}
           </div>
-          <div>
-            <DropDown flexy={0} setnavFalse={setnavFalse} />
-          </div>
-          {/* <div className="relative group">
+          <div>{/* <DropDown flexy={0} setnavFalse={setnavFalse} /> */}</div>
+          <div className="relative group">
             <Link
-              href="/clients"
+              href="/services"
               className={
                 router == "/clients"
                   ? " text-sm cursor-pointer tracking-wider text-[#223A79] p-1"
                   : " text-sm cursor-pointer tracking-wider text-gray-700 group-hover:text-[#223A79] transition-all duration-200 ease-in  p-1"
               }
             >
-              CLIENTS
+              SERVICES
             </Link>
-            {router !== "/clients" ? (
+            {router !== "/services" ? (
               <div className="w-[0px] bg-[#00C1F4] transition-all ease-in-out delay-300 group-hover:w-full h-[2px]"></div>
             ) : (
               <></>
             )}
-          </div> */}
-          <div className="relative group uppercase">
+          </div>
+          {/* <div className="relative group uppercase">
             <Link
               href="/generaltrading"
               className={
@@ -91,9 +89,9 @@ const Navbar = () => {
               <div className="w-[0px] bg-[#00C1F4] transition-all ease-in-out delay-300 group-hover:w-full h-[2px]"></div>
             ) : (
               <></>
-            )}
-          </div>
-          {/* <div className="relative group">
+            )} 
+          </div>*/}
+          <div className="relative group">
             <Link
               href="/contact"
               className={
@@ -109,7 +107,7 @@ const Navbar = () => {
             ) : (
               <></>
             )}
-          </div> */}
+          </div>
           <div className="relative group">
             <Link
               href="/about"
@@ -161,18 +159,10 @@ const Navbar = () => {
           >
             <div className="flex flex-row items-center justify-center text-left">
               <Image
-                width={100}
+                height={100}
                 src={GGLogo}
-                className="w-[50px] aspect-auto"
+                className="h-[100px] aspect-auto py-1"
               />
-              <div className="flex flex-col">
-                <h1 className=" text-base sm:text-lg font-bold text-[#223A79]">
-                  GULF GLOBAL
-                </h1>
-                <p className=" text-xs font-bold text-[#7d2793]">
-                  Technologies & General Trading L.L.C
-                </p>
-              </div>
             </div>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -287,22 +277,22 @@ const Navbar = () => {
             </div> */}
             <div className="relative uppercase group">
               <Link
-                href="/generaltrading"
+                href="/services"
                 className={
-                  router == "/generaltrading"
+                  router == "/services"
                     ? " text-sm cursor-pointer tracking-wider text-[#223A79] p-1"
                     : " text-sm cursor-pointer tracking-wider text-gray-700 group-hover:text-[#223A79] transition-all duration-200 ease-in  p-1"
                 }
               >
-                General Trading
+                SERVICES
               </Link>
-              {router !== "/generaltrading" ? (
+              {router !== "/services" ? (
                 <div className="w-[0px] bg-[#00C1F4] transition-all ease-in-out delay-300 group-hover:w-full h-[2px]"></div>
               ) : (
                 <></>
               )}
             </div>
-            {/* <div className="relative group">
+            <div className="relative group">
               <Link
                 onClick={setnavFalse}
                 href="/contact"
@@ -319,7 +309,7 @@ const Navbar = () => {
               ) : (
                 <></>
               )}
-            </div> */}
+            </div>
             <div className="relative group">
               <Link
                 onClick={setnavFalse}

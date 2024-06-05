@@ -4,21 +4,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styled from "styled-components";
 import Slider from "react-slick";
-
-// import itImg from "../../images/itImg.png";
-// import itImg2 from "../../images/itImg2.avif";
-// import itImg3 from "../../images/itImg3.webp";
-// import itInt from "../../images/itIntegration.jpeg";
-// import img from "../../images/img.jpeg";
-
-import Slide1 from "/public/images/medium-shot-woman-getting-her-eyes-checked.jpg";
-// import Slide2 from "/public/images/img2.jpg";
-// import Slide3 from "/public/images/img3.jpg";
-// import Slide4 from "/public/images/img4.jpg";
-// import Slide5 from "/public/images/img5.jpg";
-
 import Image from "next/image";
-import Link from "next/link";
+
+import Slide1 from "/public/images/img1.jpg";
+import Slide2 from "/public/images/img2.jpg";
+import Slide4 from "/public/images/img4.jpg";
 
 // import { Carousel, Wrap } from "./components/style";
 // import { Carousel, Wrap } from './style';
@@ -96,16 +86,10 @@ const Crousel = () => {
     <div className=" w-full">
       <Carousel {...settings} className=" -z-0">
         <Wrap className="relative">
-          <Image alt="img" src={Slide1} fill />
+          <Image alt="img" src={Slide4} fill />
         </Wrap>
         <Wrap className=" relative">
-          <Image alt="img" fill src={Slide1} />
-        </Wrap>
-        <Wrap className="relative">
-          <Image alt="img" fill src={Slide1} />
-        </Wrap>
-        <Wrap className="relative">
-          <Image fill src={Slide1} alt="scale" />
+          <Image alt="img" fill src={Slide2} />
         </Wrap>
         <Wrap className="relative">
           <Image fill src={Slide1} alt="scale" />
