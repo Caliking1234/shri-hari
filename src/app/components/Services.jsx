@@ -4,15 +4,15 @@ import React from "react";
 
 const Services = () => {
   const data = [
-    { name: "Cataract", imgSrc: "/images/img6.jpg" },
-    { name: "Cornea", imgSrc: "/images/img6.jpg" },
-    { name: "Retina", imgSrc: "/images/img6.jpg" },
-    { name: "Glaucoma", imgSrc: "/images/img6.jpg" },
-    { name: "Refractive", imgSrc: "/images/img6.jpg" },
-    { name: "Squint and oculoplasty", imgSrc: "/images/img6.jpg" },
-    { name: "Pediatrics ophthalmology", imgSrc: "/images/img6.jpg" },
-    { name: "Contact len services", imgSrc: "/images/img6.jpg" },
-    { name: "Comprehensive eye care", imgSrc: "/images/img6.jpg" },
+    { name: "Cataract", imgSrc: "/images/cataract.jpeg" },
+    { name: "Cornea", imgSrc: "/images/cornea.jpeg" },
+    { name: "Retina", imgSrc: "/images/retina.jpg" },
+    { name: "Glaucoma", imgSrc: "/images/glaucoma.jpeg" },
+    { name: "Refractive", imgSrc: "/images/ref.jpeg" },
+    { name: "Squint and oculoplasty", imgSrc: "/images/octo.jpeg" },
+    { name: "Pediatrics ophthalmology", imgSrc: "/images/baccha.jpeg" },
+    { name: "Contact len services", imgSrc: "/images/banner.jpg" },
+    { name: "Comprehensive eye care", imgSrc: "/images/img5.jpg" },
   ];
   return (
     <>
