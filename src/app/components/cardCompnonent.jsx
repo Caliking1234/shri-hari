@@ -7,14 +7,12 @@ const CardCompnonent = ({ serviceName, ImageLink }) => {
           src={ImageLink}
           width={300}
           height={300}
-          className="h-[250px] rounded-md"
+          className="h-[150px] md:h-[250px] rounded-md"
         />
         <h1 className=" text-center font-bold text-lg text-[#233976]">
           {serviceName}
         </h1>
       </div>
-      {/* <div className=" w-full h-full absolute top-0 left-0 rotate-0 rounded-md bg-[#ff000086] group-hover:rotate-12 transition-all duration-200 ease-in"></div>
-      <div className=" w-full h-full absolute top-0 left-0 rotate-0 rounded-md bg-[#0080008d] group-hover:-rotate-12 transition-all duration-200 ease-in"></div> */}
     </div>
   );
 };
