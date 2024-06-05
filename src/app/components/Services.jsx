@@ -15,15 +15,15 @@ const Services = () => {
     { name: "Comprehensive eye care", imgSrc: "/images/img6.jpg" },
   ];
   return (
-    <div className=" w-full h-full flex flex-col px-6 md:px-10 py-10 bg-white relative">
-      <h1 className=" fade-heading w-full text-left text-3xl sm:text-5xl text-[#233976] font-bold tracking-wider overflow-hidden z-10">
+    <div className=" w-full min-h-screen flex flex-col px-6 md:px-10 py-10 bg-white relative">
+      <h1 className=" w-full text-left text-3xl sm:text-5xl text-[#233976] font-bold tracking-wider overflow-hidden z-10">
         Our Services
       </h1>
-      <div className=" w-full h-full absolute top-0 left-0">
+      <div className=" w-full h-full hidden sm:block absolute top-0 left-0">
         <Image src="/images/services-section.jpg" fill alt="abc" />
       </div>
       <div className=" w-full h-full absolute top-0 left-0 bg-gradient-to-b from-gray-100 via-transparent to-gray-100"></div>
-      <div className=" w-full mx-auto h-full py-10 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5 gap-y-10 relative">
+      <div className=" w-full mx-auto h-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 relative">
         {data.map((service, index) => (
           <React.Fragment key={index}>
             <CardCompnonent
