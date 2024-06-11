@@ -62,8 +62,8 @@ const Navbar = () => {
               href="/services"
               className={
                 router == "/clients"
-                  ? " text-sm cursor-pointer tracking-wider text-[#223A79] p-1"
-                  : " text-sm cursor-pointer tracking-wider text-gray-700 group-hover:text-[#223A79] transition-all duration-200 ease-in  p-1"
+                  ? " text-sm cursor-pointer tracking-wider  text-[#F4BA0E] p-1"
+                  : " text-sm cursor-pointer tracking-wider text-[#223A79] group-hover:text-[#F4BA0E] transition-all duration-200 ease-in  p-1"
               }
             >
               SERVICES
@@ -96,8 +96,8 @@ const Navbar = () => {
               href="/contact"
               className={
                 router == "/contact"
-                  ? " text-sm cursor-pointer tracking-wider text-[#223A79] p-1"
-                  : " text-sm cursor-pointer tracking-wider text-gray-700 group-hover:text-[#223A79] transition-all duration-200 ease-in  p-1"
+                  ? " text-sm cursor-pointer tracking-wider text-[#F4BA0E] p-1"
+                  : " text-sm cursor-pointer tracking-wider text-[#223A79] group-hover:text-[#F4BA0E] transition-all duration-200 ease-in  p-1"
               }
             >
               CONTACT US

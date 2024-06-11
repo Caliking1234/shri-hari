@@ -1,8 +1,13 @@
+"use client";
+import React, { useEffect, useRef } from "react";
 import CardCompnonent from "./cardCompnonent";
 import Image from "next/image";
-import React from "react";
-
+import GGLogo from "/public/images/shriharilogo.png";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+gsap.registerPlugin(ScrollTrigger);
 const Services = () => {
+  const component = useRef(null);
   const data = [
     { name: "Cataract", imgSrc: "/images/cataract.jpeg" },
     { name: "Cornea", imgSrc: "/images/cornea.jpeg" },
@@ -14,8 +19,37 @@ const Services = () => {
     { name: "Contact len services", imgSrc: "/images/banner.jpg" },
     { name: "Comprehensive eye care", imgSrc: "/images/img5.jpg" },
   ];
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      const tl = gsap.timeline({
+        scrollTrigger: {
+          trigger: component.current,
+          start: "top top",
+          end: "75% 50%",
+          scrub: 1,
+          markers: true,
+        },
+      });
+
+      tl.to(".animi", {
+        scale: 5,
+        opacity: 0,
+        autoAlpha: 0,
+        ease: "power3.out",
+      });
+    });
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <>
+    <div ref={component} className=" w-full ">
+      <div className=" animi w-full h-screen z-[999] bg-[#5b77c6] flex items-center justify-center ">
+        <Image
+          height={300}
+          src={GGLogo}
+          className="h-[300px] aspect-auto py-1"
+        />
+      </div>
       <div className="px-5 py-10 text-3xl md:text-5xl text-neutral-600 flex flex-col items-center justify-center gap-5 text-center">
         <h1>
           {" "}
@@ -29,7 +63,7 @@ const Services = () => {
         </p>
       </div>
       <div className=" w-full min-h-screen flex flex-col px-6 md:px-10 py-10 bg-white relative">
-        <h1 className=" w-full text-left text-3xl sm:text-5xl text-[#233976] font-bold tracking-wider overflow-hidden z-10">
+        <h1 className=" w-full text-left text-3xl sm:text-5xl text-[#233976] font-bold tracking-wider overflow-hidden py-10 z-10">
           Our Services
         </h1>
         <div className=" w-full h-full hidden sm:block absolute top-0 left-0">
@@ -47,7 +81,7 @@ const Services = () => {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
