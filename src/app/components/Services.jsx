@@ -1,13 +1,7 @@
-"use client";
-import React, { useEffect, useRef } from "react";
 import CardCompnonent from "./cardCompnonent";
+import React from "react";
 import Image from "next/image";
-import GGLogo from "/public/images/shriharilogo.png";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-gsap.registerPlugin(ScrollTrigger);
 const Services = () => {
-  const component = useRef(null);
   const data = [
     { name: "Cataract", imgSrc: "/images/cataract.jpeg" },
     { name: "Cornea", imgSrc: "/images/cornea.jpeg" },
@@ -21,8 +15,8 @@ const Services = () => {
   ];
 
   return (
-    <div ref={component} className=" w-full ">
-      <div className="px-5 py-10 text-3xl md:text-5xl text-neutral-600 flex flex-col items-center justify-center gap-5 text-center">
+    <div className=" w-full ">
+      {/* <div className="px-5 py-10 text-3xl md:text-5xl text-neutral-600 flex flex-col items-center justify-center gap-5 text-center">
         <h1>
           {" "}
           Welcome to <span className=" text-[#233976] font-bold">
@@ -33,7 +27,7 @@ const Services = () => {
         <p className=" text-2xl text-[#233976]">
           Your Perfection Vision Is Our Dream
         </p>
-      </div>
+      </div> */}
       <div className=" w-full min-h-screen flex flex-col px-6 md:px-10 py-10 bg-white relative">
         <h1 className=" w-full text-left text-3xl sm:text-5xl text-[#233976] font-bold tracking-wider overflow-hidden py-10 z-10">
           Our Services
