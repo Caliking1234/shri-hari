@@ -73,15 +73,7 @@ const Crousel = () => {
     .slick-prev:before {
     }
   `;
-  const [mounted, setmounted] = useState(false);
 
-  useEffect(() => {
-    setmounted(true);
-  }, []);
-
-  if (!mounted) {
-    return;
-  }
   return (
     <div className=" w-full h-[50vh] sm:h-full">
       <Carousel {...settings} className=" -z-0">

@@ -19,37 +19,9 @@ const Services = () => {
     { name: "Contact len services", imgSrc: "/images/banner.jpg" },
     { name: "Comprehensive eye care", imgSrc: "/images/img5.jpg" },
   ];
-  useEffect(() => {
-    const ctx = gsap.context(() => {
-      const tl = gsap.timeline({
-        scrollTrigger: {
-          trigger: component.current,
-          start: "top top",
-          end: "75% 50%",
-          scrub: 1,
-          markers: true,
-        },
-      });
-
-      tl.to(".animi", {
-        scale: 5,
-        opacity: 0,
-        autoAlpha: 0,
-        ease: "power3.out",
-      });
-    });
-    return () => ctx.revert();
-  }, []);
 
   return (
     <div ref={component} className=" w-full ">
-      <div className=" animi w-full h-screen z-[999] bg-[#5b77c6] flex items-center justify-center ">
-        <Image
-          height={300}
-          src={GGLogo}
-          className="h-[300px] aspect-auto py-1"
-        />
-      </div>
       <div className="px-5 py-10 text-3xl md:text-5xl text-neutral-600 flex flex-col items-center justify-center gap-5 text-center">
         <h1>
           {" "}
