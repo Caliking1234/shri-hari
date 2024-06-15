@@ -24,6 +24,7 @@ export default function Home() {
               height="450"
               allowfullscreen=""
               loading="lazy"
+              className=" w-[280px] h-[300px] md:w-[600px] md:h-[450px]"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
             <div className=" w-full flex flex-row items-center justify-between text-gray-600 text-xl">
@@ -37,6 +38,7 @@ export default function Home() {
               width="600"
               height="450"
               allowfullscreen=""
+              className=" w-[280px] h-[300px] md:w-[600px] md:h-[450px]"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
