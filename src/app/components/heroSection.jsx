@@ -39,7 +39,7 @@ const HeroSection = () => {
     );
   }, []);
   return (
-    <div className="w-full md:h-[calc(100vh-100px)] flex flex-col md:flex-row items-center justify-center">
+    <div className="w-full min-h-screen md:h-[calc(100vh-100px)] flex flex-col md:flex-row items-center justify-center ">
       <div className=" texty w-full h-full px-8 text-5xl capatalize tracking-tight leading-none text-neutral-600 flex flex-col items-center md:items-start justify-center box-border">
         <h1>Welcome to,</h1>
         <div className=" w-full flex flex-row items-center justify-center md:justify-start">

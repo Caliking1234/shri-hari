@@ -27,25 +27,35 @@ function Footer() {
           </div> */}
         </div>
         <div className=" py-5 md:p-5 grid grid-cols-2 md:grid-cols-4 w-full gap-5">
-          {DropDownMenu.map((items, index) => {
+          {/* {DropDownMenu.map((items, index) => {
             return (
               <div key={index} className=" md:mx-auto w-full md:w-[70%]">
                 <FooterLinks title={items.title} list1={items.Link} />
               </div>
             );
-          })}
+          })} */}
           <div className=" md:mx-auto w-full md:w-[70%]">
-            <p className="text-gray-600 font-semibold text-lg pb-4">
-              General Trading
-            </p>
+            <p className="text-gray-600 font-semibold text-lg pb-4">Services</p>
             <div
               className={
-                router === "/generaltrading"
+                router === "/services"
                   ? " text-xs pb-2 text-[#f59522] cursor-pointer"
                   : "text-black text-xs pb-2 hover:text-[#f59522] transition-all duration-200 ease-in cursor-pointer"
               }
             >
-              <Link href="/generaltrading">General Trading</Link>
+              <Link href="/services">Our Services</Link>
+            </div>
+          </div>
+          <div className=" md:mx-auto w-full md:w-[70%]">
+            <p className="text-gray-600 font-semibold text-lg pb-4">Contact</p>
+            <div
+              className={
+                router === "/contact"
+                  ? " text-xs pb-2 text-[#f59522] cursor-pointer"
+                  : "text-black text-xs pb-2 hover:text-[#f59522] transition-all duration-200 ease-in cursor-pointer"
+              }
+            >
+              <Link href="/contact">Book An Appointment</Link>
             </div>
           </div>
           <div className=" md:mx-auto w-full md:w-[70%]">
