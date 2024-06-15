@@ -17,7 +17,7 @@ export default function Home() {
           <h1 className=" text-6xl font-semibold">Our Centers</h1>
         </div>
         <div className=" w-full flex flex-col md:flex-row items-center justify-around py-5 gap-y-8">
-          <div className=" w-full flex flex-col">
+          <div className=" w-full flex flex-col items-center justify-center">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3498.6403327996045!2d77.77417127496035!3d28.730292879635602!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390c8506a70e8a69%3A0x5ddc5f395169200a!2sShrihari%20Eye%20Care%20%26%20Laser%20Centre!5e0!3m2!1sen!2sin!4v1718423455850!5m2!1sen!2sin"
               width="600"
@@ -32,7 +32,7 @@ export default function Home() {
               <div>Email:shriharieyecenter@gmail.com</div>
             </div>
           </div>
-          <div className=" w-full flex flex-col">
+          <div className=" w-full flex flex-col items-center justify-center">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.178562915489!2d77.18003407495868!3d28.68430468172873!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d0328925a157b%3A0xc7ff2d1da5b409f0!2sSHRIHARI%20EYE%20CARE%20%26%20LASER%20CENTRE!5e0!3m2!1sen!2sin!4v1718423499129!5m2!1sen!2sin"
               width="600"
