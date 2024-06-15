@@ -24,10 +24,10 @@ export default function Home() {
               height="450"
               allowfullscreen=""
               loading="lazy"
-              className=" w-[280px] h-[300px] mx-auto md:w-[600px] md:h-[450px]"
+              className=" w-[300px] h-[300px] mx-auto md:w-[600px] md:h-[450px]"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div className=" w-full flex flex-row items-center justify-between text-gray-600 text-xl">
+            <div className=" w-full flex flex-col md:flex-row items-center justify-between text-gray-600 text-xl">
               <div>Phone No. 7428383099</div>
               <div>Email:shriharieyecenter@gmail.com</div>
             </div>
@@ -38,11 +38,11 @@ export default function Home() {
               width="600"
               height="450"
               allowfullscreen=""
-              className=" w-[280px] h-[300px] mx-auto md:w-[600px] md:h-[450px]"
+              className=" w-[300px] h-[300px] mx-auto md:w-[600px] md:h-[450px]"
               loading="lazy"
               referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
-            <div className=" w-full flex flex-row items-center justify-between text-gray-600 text-xl">
+            <div className=" w-full flex flex-col md:flex-row items-center justify-between text-gray-600 text-xl">
               <div>Phone No. 7428377997</div>
               <div>Email:shriharieyecenter@gmail.com</div>
             </div>
