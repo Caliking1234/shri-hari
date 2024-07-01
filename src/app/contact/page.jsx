@@ -124,6 +124,7 @@ const Page = () => {
                         SHRIHARI EYE CARE & LASER CENTRE Hall no. 10 first floor
                         shri ram plaza near tehsil chopla garh road hapur 245101
                       </span>
+                      <br />
                       <span>
                         SHRIHARI EYE CARE & LASER CENTRE A-2, SWAMI NARAYAN RD,
                         beside NDPL OFFICE, Ashok Vihar Phase 3, Block A, Ashok
