@@ -96,7 +96,7 @@ function Footer() {
               >
                 <Link
                   href={
-                    "https://www.linkedin.com/company/gulf-global-technologies-and-general-trading-llc/"
+                    "https://x.com/shriharieyecare?t=45f3kGTApySeleLzeJqa0w&s=09"
                   }
                   className="flex flex-row gap-3 cursor-pointer"
                 >
@@ -139,7 +139,7 @@ function Footer() {
               >
                 <Link
                   href={
-                    "https://www.linkedin.com/company/gulf-global-technologies-and-general-trading-llc/"
+                    "https://youtube.com/@shrihari-rp1jy?si=H1isA3sTnkLNKdXe"
                   }
                   className="flex flex-row gap-3 cursor-pointer"
                 >
@@ -168,7 +168,9 @@ function Footer() {
                 }
               >
                 <Link
-                  href={"https://www.instagram.com/gulf_global_technologies/"}
+                  href={
+                    "https://www.instagram.com/shriharieyecarecentre_?igsh=MWNnMTd1aWIzdXppYQ=="
+                  }
                   className="flex flex-row gap-3 cursor-pointer"
                 >
                   <svg
@@ -190,7 +192,7 @@ function Footer() {
               >
                 <Link
                   href={
-                    "https://www.facebook.com/profile.php?id=61550709927804&mibextid=LQQJ4d"
+                    "https://www.facebook.com/share/rTUUmsTSnpVjNfDw/?mibextid=qi2Omg"
                   }
                   className="flex flex-row gap-3 cursor-pointer"
                 >
