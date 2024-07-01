@@ -49,6 +49,7 @@ const HeroSection = () => {
               animationData={ContacUsGif}
               width={"300px"}
               height={"300px"}
+              className=" text-white"
             />
           </div>
           <h1 className=" text-[#F4BA0E] texty font-bold text-6xl md:text-9xl">
@@ -56,7 +57,7 @@ const HeroSection = () => {
           </h1>
         </div>
         <h1 className=" texty text-xl md:text-5xl">Eye Care Center</h1>
-        <h1 className=" texty w-[280px] text-white text-xl md:text-5xl text-left capitalize">
+        <h1 className=" texty w-[280px] md:w-[500px] text-white text-xl md:text-5xl text-left capitalize">
           where clarity meets compassion.{" "}
         </h1>
       </div>
