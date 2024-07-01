@@ -6,15 +6,15 @@ import HeroSection from "./components/heroSection";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-100">
+    <main className="flex min-h-screen flex-col items-center justify-center bg-white">
       {/* <Crousel /> */}
       <HeroSection />
       <Services />
       <HomePageBanner />
       <AboutSection />
-      <div className=" w-full flex-col pb-10">
-        <div className=" text-[#21397A] text-center">
-          <h1 className=" text-6xl font-semibold">Our Centers</h1>
+      <div className=" w-full flex-col px-5 pb-10">
+        <div className=" text-[#21397A] text-left">
+          <h1 className=" text-6xl font-semibold">Find Us Here</h1>
         </div>
         <div className=" w-full flex flex-col md:flex-row items-center justify-around py-5 gap-y-8">
           <div className=" w-fit flex flex-col items-center justify-center">

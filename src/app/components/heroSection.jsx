@@ -39,10 +39,11 @@ const HeroSection = () => {
     );
   }, []);
   return (
-    <div className="w-full pt-5 md:pt-0 md:h-[calc(100vh-100px)] flex flex-col md:flex-row items-center justify-center ">
-      <div className=" texty w-full h-full px-8 text-5xl capatalize tracking-tight leading-none text-neutral-600 flex flex-col items-center md:items-start justify-center box-border">
+    <div className="relative w-full pt-5 md:pt-0 md:h-[calc(100vh-100px)] bg-[url('/images/img4.jpg')] bg-cover bg-fixed bg-center bg-no-repeat flex flex-row items-center justify-center  ">
+      <div className=" w-full h-full absolute top-0 left-0 bg-gradient-to-r from-[#233976] via-[#233976b0] from-50%  to-transparent z-10"></div>
+      <div className=" z-[100] texty w-full h-full px-8 text-xl md:text-5xl capatalize tracking-tight leading-none text-white flex flex-col items-start justify-center box-border">
         <h1>Welcome to,</h1>
-        <div className=" w-full flex flex-row items-center justify-center md:justify-start">
+        <div className=" w-full flex flex-row items-center justify-start">
           <div className=" animi w-[200px] overflow-hidden hidden md:block">
             <Lottie
               animationData={ContacUsGif}
@@ -50,25 +51,27 @@ const HeroSection = () => {
               height={"300px"}
             />
           </div>
-          <h1 className=" text-[#233976] texty font-bold text-8xl md:text-9xl">
+          <h1 className=" text-[#F4BA0E] texty font-bold text-6xl md:text-9xl">
             ShriHari
           </h1>
         </div>
-        <h1 className=" texty"> Eye Care Center</h1>
+        <h1 className=" texty text-xl md:text-5xl"> Eye Care Center</h1>
+        <h1 className=" texty w-full text-white text-xl md:text-5xl text-left capitalize">
+          where clarity meets compassion.{" "}
+        </h1>
       </div>
-      <div className=" texty w-full h-full flex flex-col items-center justify-around">
+      <div className=" texty w-1/2 h-full flex flex-col items-center justify-around">
         <Image
-          src="/images/vivek_dr.png"
-          height={500}
-          width={500}
+          src="/images/img4.jpg"
+          fill
           alt="abc"
           className=" drop-shadow-md w-[280px] md:w-[500px] h-[280px] md:h-[500px]"
         />
-        <div className=" capitalize w-full">
+        {/* <div className=" capitalize w-full">
           <h1 className=" text-neutral-600 text-5xl text-center">
             where clarity meets compassion.{" "}
           </h1>
-        </div>
+        </div> */}
       </div>
     </div>
   );
