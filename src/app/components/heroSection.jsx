@@ -39,7 +39,7 @@ const HeroSection = () => {
     );
   }, []);
   return (
-    <div className="relative w-full pt-5 md:pt-0 md:h-[calc(100vh-100px)] bg-[url('/images/img4.jpg')] bg-cover bg-fixed bg-center bg-no-repeat flex flex-row items-center justify-center  ">
+    <div className="relative w-full pt-5 md:pt-0 md:h-[calc(100vh-100px)] bg-[url('/images/img4.jpg')] bg-cover bg-center bg-no-repeat flex flex-row items-center justify-center  ">
       <div className=" w-full h-full absolute top-0 left-0 bg-gradient-to-r from-[#233976] via-[#233976b0] from-50%  to-transparent z-10"></div>
       <div className=" z-[100] texty w-full h-full px-8 text-xl md:text-5xl capatalize tracking-tight leading-none text-white flex flex-col items-start justify-center box-border">
         <h1>Welcome to,</h1>
@@ -55,12 +55,12 @@ const HeroSection = () => {
             ShriHari
           </h1>
         </div>
-        <h1 className=" texty text-xl md:text-5xl"> Eye Care Center</h1>
+        <h1 className=" texty text-xl md:text-5xl">Eye Care Center</h1>
         <h1 className=" texty w-full text-white text-xl md:text-5xl text-left capitalize">
           where clarity meets compassion.{" "}
         </h1>
       </div>
-      <div className=" texty w-1/2 h-full flex flex-col items-center justify-around">
+      <div className=" texty w-full h-full">
         <Image
           src="/images/img4.jpg"
           fill
