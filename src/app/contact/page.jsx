@@ -118,10 +118,10 @@ const Page = () => {
               </a>
             </div>
           </div>
-          <Lottie
+          {/* <Lottie
             animationData={ContacUsGif}
             style={{ width: "200px", height: "200px" }}
-          />
+          /> */}
         </div>
         <div className=" w-full h-fit py-5 sm:py-10 sm:mx-5 sm:w-1/2 sm:min-h-[100%] flex flex-col items-center justify-center bg-gray-200 rounded-md">
           <form
