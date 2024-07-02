@@ -5,7 +5,7 @@ import { gsap } from "gsap";
 import CardDisplay from "../components/cardDisplay";
 import Link from "next/link";
 
-const page = () => {
+const Page = () => {
   const data = [
     {
       name: "Cataract",
@@ -133,4 +133,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Page;
