@@ -5,16 +5,16 @@ const CardDisplay = ({ serviceName, ImageLink, servicedescp, idx }) => {
       <div
         className={
           idx % 2 == 0
-            ? ` w-full h-full absolute top-0 left-0 rounded-md flex flex-row z-10  bg-white px-1 py-3 shadow-xl hover:shadow-2xl`
-            : ` w-full h-full absolute top-0 left-0 rounded-md flex flex-row-reverse z-10  bg-white px-1 py-3 shadow-xl hover:shadow-2xl`
+            ? ` w-full h-full absolute top-0 left-0 rounded-md flex flex-col md:flex-row z-10  bg-white px-1 py-3 shadow-xl hover:shadow-2xl`
+            : ` w-full h-full absolute top-0 left-0 rounded-md flex flex-col md:flex-row-reverse z-10  bg-white px-1 py-3 shadow-xl hover:shadow-2xl`
         }
       >
-        <div className=" h-full">
+        <div className=" h-[200px] w-full md:h-full">
           <Image
             src={ImageLink}
             width={300}
             height={300}
-            className=" rounded-md h-full"
+            className=" rounded-md w-full h-[200px] md:h-full"
           />
         </div>
         <div className=" w-full p-2">
