@@ -1,7 +1,7 @@
 import Image from "next/image";
 const CardDisplay = ({ serviceName, ImageLink, servicedescp, idx }) => {
   return (
-    <div className="relative group w-[90%] md:w-3/4 mx-auto h-[450px] md:h-[250px] px-3">
+    <div className="relative group w-[90%] md:w-3/4 mx-auto h-[450px] md:h-[300px] px-3">
       <div
         className={
           idx % 2 == 0
