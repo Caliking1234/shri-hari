@@ -17,7 +17,7 @@ const CardDisplay = ({ serviceName, ImageLink, servicedescp, idx }) => {
             className=" rounded-md w-full h-[200px] md:h-full"
           />
         </div>
-        <div className=" w-full p-2">
+        <div className=" w-full p-2 overflow-y-auto">
           <h1 className=" text-left font-bold text-lg text-[#233976]">
             {serviceName}
           </h1>
