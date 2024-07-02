@@ -7,7 +7,7 @@ const CardCompnonent = ({ serviceName, ImageLink }) => {
           src={ImageLink}
           width={300}
           height={300}
-          className="h-[120px] md:h-[250px] rounded-md"
+          className="h-[140px] md:h-[250px] rounded-md"
         />
         <h1 className=" text-center font-bold text-lg text-[#233976]">
           {serviceName}
