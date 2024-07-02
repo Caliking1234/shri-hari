@@ -61,7 +61,7 @@ const Navbar = () => {
             <Link
               href="/services"
               className={
-                router == "/clients"
+                router == "/services"
                   ? " text-sm cursor-pointer tracking-wider  text-[#F4BA0E] p-1"
                   : " text-sm cursor-pointer tracking-wider text-[#223A79] group-hover:text-[#F4BA0E] transition-all duration-200 ease-in  p-1"
               }
