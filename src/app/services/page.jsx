@@ -96,7 +96,7 @@ const page = () => {
   }, []);
   return (
     <div className=" w-full relative">
-      <div className=" z-[60] fixed bottom-0 left-0 md:top-[50%] md:right-2 md:-translate-y-[50%] bg-[#233976] w-full md:w-[100px] h-[80px] text-sm px-2 py-3 flex items-center justify-center shadow-md shadow-black hover:scale-95 hover:shadow-lg hover:shadow-black transition-all duration-150">
+      <div className=" z-[60] fixed bottom-2 left-0 md:top-[50%] md:-translate-y-[50%] bg-[#233976] w-full md:w-[100px] h-[80px] text-sm px-2 py-3 flex items-center justify-center shadow-md shadow-black hover:scale-95 hover:shadow-lg hover:shadow-black transition-all duration-150">
         <Link href={"/contact"}>Book An Appointment</Link>
       </div>
       <div className="relative w-full pt-5 md:pt-0 h-[30vh] bg-[url('/images/img4.jpg')] bg-cover bg-center bg-no-repeat flex flex-row items-center justify-center gap-3  ">
