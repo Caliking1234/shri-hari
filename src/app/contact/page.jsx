@@ -18,10 +18,10 @@ const Page = () => {
     e.preventDefault();
     emailjs
       .sendForm(
-        "service_qjf3pee",
-        "template_7tqet1k",
+        "service_suy33x7",
+        "template_jjm3al4",
         e.target,
-        "Jha4ZIaNTb2Anm8Sg"
+        "8Az1UG1h6vwh4majT"
       )
       .then((res) => {
         setName("");
@@ -216,7 +216,7 @@ const Page = () => {
                 type="number"
                 placeholder="phone number"
                 required
-                name="phoneno"
+                name="phone"
                 value={Phoneno}
                 onChange={(e) => {
                   setPhoneno(e.target.value);
