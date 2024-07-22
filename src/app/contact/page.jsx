@@ -5,8 +5,8 @@ import ContacUsGif from "../../../public/doc-ani.json";
 // import ChatWithUS from "../components/ChatWithUS";
 import emailjs from "emailjs-com";
 import { Toaster, toast } from "sonner";
-import Lottie from "lottie-react";
 import { gsap } from "gsap";
+import Link from "next/link";
 
 const Page = () => {
   const [Name, setName] = useState("");
@@ -173,7 +173,19 @@ const Page = () => {
                     </svg>
 
                     <p className=" sm:px-1 text-xs sm:text-sm">
-                      Call Us :- +7428383099,7428377997
+                      Call Us :-{" "}
+                      <Link
+                        href={`tel:+917428383099`}
+                        className=" w-full  text-center"
+                      >
+                        +917428383099
+                      </Link>{" "}
+                      <Link
+                        href={`tel:+917428377997`}
+                        className=" w-full  text-center"
+                      >
+                        +917428377997
+                      </Link>
                     </p>
                   </i>
                 </a>
