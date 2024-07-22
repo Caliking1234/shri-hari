@@ -53,7 +53,7 @@ const HeroSection = () => {
             />
           </div>
           <h1 className=" text-[#F4BA0E] texty font-bold text-6xl md:text-9xl">
-            ShriHari
+            श्रीहरि
           </h1>
         </div>
         <h1 className=" texty text-xl md:text-5xl">Eye Care Center</h1>

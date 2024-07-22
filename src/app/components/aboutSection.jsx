@@ -36,30 +36,31 @@ const AboutSection = () => {
             </p>
           </div>
           <div className=" w-[90%] md:w-[70%] mx-auto h-full z-20">
-            <h1 className=" text-lg md:text-xl text-[#233976]">
-              TEAM OF OVER 19 HIGHLY EXPERIENCED DOCTORS
+            <h1 className=" text-lg md:text-xl text-[#233976] uppercase">
+              Advanced Technology and Equipment
             </h1>
             <p className=" w-full text-sm text-neutral-500">
-              When you visit any of our hospitals, you have the collective
-              experience of over 100+ doctors backing your treatments
+              Regularly updates and maintains equipment to ensure it meets the
+              latest standards and can provide the best possible outcomes.
             </p>
           </div>
           <div className=" w-[90%] md:w-[70%] mx-auto h-full z-20">
-            <h1 className=" text-lg md:text-xl text-[#233976]">
-              TEAM OF OVER 19 HIGHLY EXPERIENCED DOCTORS
+            <h1 className=" text-lg md:text-xl text-[#233976] uppercase">
+              comprehensive range of services
             </h1>
             <p className=" text-sm text-neutral-500">
-              When you visit any of our hospitals, you have the collective
-              experience of over 100+ doctors backing your treatments
+              At ShriHari Eye Care & Laser Centre we provide a vast range of eye
+              treatments and surgical procedures
             </p>
           </div>
           <div className=" w-[90%] md:w-[70%] mx-auto h-full z-20">
-            <h1 className=" text-lg md:text-xl text-[#233976]">
-              TEAM OF OVER 19 HIGHLY EXPERIENCED DOCTORS
+            <h1 className=" text-lg md:text-xl text-[#233976] uppercase">
+              Patient Centric Approach
             </h1>
             <p className=" text-sm text-neutral-500">
-              When you visit any of our hospitals, you have the collective
-              experience of over 100+ doctors backing your treatments
+              Enhance the patient experience by focusing on customer service.
+              Train staff to be empathetic, responsive, and efficient in
+              handling patient inquiries and concerns.
             </p>
           </div>
         </div>

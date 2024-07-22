@@ -1,17 +1,34 @@
 import CardCompnonent from "./cardCompnonent";
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 const Services = () => {
   const data = [
-    { name: "Cataract", imgSrc: "/images/cataract.jpeg" },
-    { name: "Cornea", imgSrc: "/images/cornea.jpeg" },
-    { name: "Retina", imgSrc: "/images/retina.jpg" },
-    { name: "Glaucoma", imgSrc: "/images/glaucoma.jpeg" },
-    { name: "Refractive", imgSrc: "/images/ref.jpeg" },
-    { name: "Squint and oculoplasty", imgSrc: "/images/octo.jpeg" },
-    { name: "Pediatrics ophthalmology", imgSrc: "/images/baccha.jpeg" },
-    { name: "Contact len services", imgSrc: "/images/banner.jpg" },
-    { name: "Comprehensive eye care", imgSrc: "/images/img5.jpg" },
+    { name: "Cataract", imgSrc: "/images/cataract.jpeg", id: "Cataract" },
+    { name: "Cornea", imgSrc: "/images/cornea.jpeg", id: "Cornea" },
+    { name: "Retina", imgSrc: "/images/retina.jpg", id: "Retina" },
+    { name: "Glaucoma", imgSrc: "/images/glaucoma.jpeg", id: "Glaucoma" },
+    { name: "Refractive", imgSrc: "/images/ref.jpeg", id: "Refractive" },
+    {
+      name: "Squint and oculoplasty",
+      imgSrc: "/images/octo.jpeg",
+      id: "Squint",
+    },
+    {
+      name: "Pediatrics ophthalmology",
+      imgSrc: "/images/baccha.jpeg",
+      id: "Pediatricsophthalmology",
+    },
+    {
+      name: "Contact len services",
+      imgSrc: "/images/banner.jpg",
+      id: "Contactlens",
+    },
+    {
+      name: "Comprehensive eye care",
+      imgSrc: "/images/img5.jpg",
+      id: "eyecare",
+    },
   ];
 
   return (
@@ -26,12 +43,12 @@ const Services = () => {
         <div className=" w-full h-full absolute top-0 left-0 bg-gradient-to-b from-gray-100 via-transparent to-gray-100"></div>
         <div className=" w-full mx-auto h-full grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-y-10 relative">
           {data.map((service, index) => (
-            <React.Fragment key={index}>
+            <Link href={`/services/#${service.id}`} key={index}>
               <CardCompnonent
                 serviceName={service.name}
                 ImageLink={service.imgSrc}
               />
-            </React.Fragment>
+            </Link>
           ))}
         </div>
       </div>
