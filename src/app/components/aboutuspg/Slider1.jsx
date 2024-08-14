@@ -111,7 +111,7 @@ const Slider1 = () => {
         </h1>
       <Slider {...settings}>
         {products.map((item, index) => (
-          <div key={index} className=" max-w-xs relative h-[55vh] lg:h-[65vh] hover:bg-blue-800 bg-orange-400 rounded-xl bg-clip-padding  text-white ">
+          <div key={index} className=" max-w-xs relative h-[65vh]  hover:bg-blue-800 bg-orange-400 rounded-xl bg-clip-padding  text-white ">
             <div className="  hover:shadow transition-all duration-300 relative group">
               <Image
               height={750}
