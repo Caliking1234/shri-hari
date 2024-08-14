@@ -1,13 +1,17 @@
-"use client";
-import React, { useEffect } from "react";
+import React, { useState } from "react";
+
+import {
+  Accordion,
+  AccordionHeader,
+  AccordionBody,
+} from "@material-tailwind/react";
 import Image from "next/image";
-import { gsap } from "gsap";
-// import CardDisplay from "../components/cardDisplay";
-import Cards from "../components/servicespg/Cards";
 
-import Link from "next/link";
+const Cards = () => {
+  const [open, setOpen] = useState(0);
 
-const Page = () => {
+  const handleOpen = (value) => setOpen(open === value ? 0 : value);
+
   const data = [
     {
       name: "Cataract",
@@ -73,102 +77,76 @@ const Page = () => {
         "Comprehensive eye care involves a holistic approach to maintaining and improving eye health and vision. This includes routine eye examinations to detect and monitor a wide range of ocular conditions such as refractive errors (myopia, hyperopia, astigmatism), glaucoma, cataracts, macular degeneration, diabetic retinopathy, and more. During these exams, an eye care professional evaluates visual acuity, refraction, ocular alignment, and the overall health of the eye, including the retina, cornea, lens, and optic nerve.",
     },
   ];
-  useEffect(() => {
-    const tl = gsap.timeline();
-    tl.fromTo(
-      ".texty",
-      {
-        opacity: 0,
-        y: 20,
-      },
-      {
-        opacity: 1,
-        y: 0,
-        stagger: 0.4,
-        duration: 1.2,
-        ease: "back.out(1.7)",
-      }
-    );
 
-    tl.fromTo(
-      ".imga",
-      { opacity: 0, y: 20 },
-      { opacity1: 1, y: 0, duration: 1.2, ease: "back.out(1.7}" },
-      "-=2"
+  function Icon({ id, open }) {
+    return (
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        strokeWidth={2}
+        stroke="currentColor"
+        className={`${
+          id === open ? "rotate-90" : ""
+        } h-5 w-5 transition-transform`}
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+        />
+      </svg>
     );
+  }
 
-    tl.fromTo(
-      ".animi",
-      {
-        width: 0,
-      },
-      { width: "10vw", duration: 1, ease: "back.out(1.7)" }
-    );
-  }, []);
   return (
-    <>
-    
-    
-    <div className=" w-full relative">
-      <div className=" z-[60] fixed bottom-0 left-0 md:top-[50%] md:-translate-y-[50%] w-full md:w-[100px] h-[40px] text-sm  flex items-center justify-center flex-row  md:flex-col gap-1">
-        <Link
-          href={"/contact"}
-          className=" w-full bg-[#233976] hover:bg-orange-400 text-center text-white px-2 py-3 shadow-sm shadow-black hover:shadow-md hover:shadow-black transition-all duration-150"
-        >
-          Book An Appointment
-        </Link>
-        <Link
-          href={`tel:+917428383099`}
-          className=" w-full bg-[#233976] hover:bg-orange-400 text-center text-white px-2 py-3 shadow-sm shadow-black hover:shadow-md hover:shadow-black  transition-all duration-150"
-        >
-          Call Us
-        </Link>
-      </div>
+    <div id="team">
 
-      <div className="relative w-full pt-5 md:pt-0 h-[30vh] bg-[url('/images/img4.jpg')] bg-cover bg-center bg-no-repeat flex flex-row items-center justify-center gap-3  ">
-        <div className=" w-full h-full absolute top-0 left-0 bg-gradient-to-r from-[#233976] via-[#233976b0] from-50%  to-transparent z-10"></div>
-        <div className=" z-[20] texty w-1/2 h-full px-8 text-xl md:text-5xl capatalize tracking-tight leading-none text-white flex flex-col items-start justify-center gap-3 box-border">
-          <div className=" w-full flex flex-row items-center justify-start">
-            <h1 className=" text-[#F4BA0E] texty font-bold text-7xl">
-              Our Services
-            </h1>
+      <div className=" py-8 pt-16 justify-center  mx-auto text-center lg:pt-16 ">
+        <div className="mx-auto  px-6 lg:px-8">        
+          <div className="lg:w-[90%] justify-center mx-auto text-center">
+            <ul className="mt-20 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:mx-0 lg:max-w-none lg:grid-cols-3 xl:grid-cols-3">
+              {data.map((profile, index) => (
+                <li key={profile.id} className="p-2 rounded-lg shadow-xl">
+                  <Image
+                    height={750}
+                    width={750}
+                    className="aspect-[20/13] w-full rounded-2xl object-cover"
+                    src={profile.imgSrc}
+                    alt={profile.name}
+                  />
+                  <h3 className="mt-6 text-lg font-semibold leading-8 tracking-tight text-black">
+                    {profile.name}
+                  </h3>
+                  {/* <p className="text-base leading-7">{profile.role}</p> */}
+                  {/* <p className="text-sm leading-6">{profile.location}</p> */}
+
+                  <div>
+                    <Accordion
+                      open={open === profile.id}
+                      icon={<Icon id={profile.id} open={open} />}
+                      className="px-2 lg:px-2 my-2 rounded-lg bg-gray-100 shadow-md hover:bg-orange-400 bg-opacity-30"
+                    >
+                      <AccordionHeader
+                        style={{ border: "0" }}
+                        className="text-md "
+                        onClick={() => handleOpen(profile.id)}
+                      >
+                        More Information...
+                      </AccordionHeader>
+                      <AccordionBody className="bg-orange-400">
+                        {profile.descp}
+                      </AccordionBody>
+                    </Accordion>
+                  </div>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
-        <div className=" texty w-1/2 h-full">
-          <Image
-            src="/images/img4.jpg"
-            fill
-            alt="abc"
-            className=" drop-shadow-md w-[280px] md:w-[500px] h-[280px] md:h-[500px]"
-          />
-        </div>
       </div>
-
-
-      {/* <div className=" w-full h-full relative flex flex-col gap-3 py-10 bg-gray-100">
-        {data.map((service, index) => (
-          <div id={service.id} key={index}>
-            <CardDisplay
-              serviceName={service.name}
-              ImageLink={service.imgSrc}
-              servicedescp={service.descp}
-              idx={index}
-            />
-          </div>
-        ))}
-      </div> */}
-
-
     </div>
-
-    
-
-    <Cards/>
-
-    
-
-    </>
   );
 };
 
-export default Page;
+export default Cards;
