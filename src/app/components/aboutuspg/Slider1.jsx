@@ -51,14 +51,14 @@ const products = [
   },
   {
     id: 4,
-    img: "/images/Dr1.jfif",
+    img: "/images/Dr4.jfif",
     name: "Dr. Shilpa taneja mittal ",
     price: "Facial plastic and aesthetic surgeon ",
     exp:"MBBS , DNB , FICO , MNAMS , FAEH",
   },
   {
     id: 5,
-    img: "/images/Dr1.jfif",
+    img: "/images/Dr4.jfif",
     name: "Dr. Jyoti batra ",
     price: "Oculoplasty surgeon ",
     exp: "Mbbs ( AIIMS) , MD ( AIIMS) FLVPET ( oculoplasty ) , DNB , FACIO",

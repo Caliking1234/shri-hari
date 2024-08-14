@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
-// import Logo from "../../../public/images/Dr1.jpeg"
 
+const Logo = "/images/dr_vivek.jpg"
 const Ouraim = () => {
   return (
     <>
@@ -24,8 +24,11 @@ const Ouraim = () => {
           <div className=" shadow-2xl pt-px sm:rounded-6xl bg-no-repeat bg-cover    bg-gray-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-50 border border-gray-100">
             <div className="relative shadow-2xl mx-auto -mt-16 h-44 w-44 overflow-hidden rounded-full bg-slate-200 md:float-right md:h-64 md:w-64 md:[shape-outside:circle(40%)] lg:mr-20 lg:h-72 lg:w-72">
               <Image
+              width={750}
+              height={750}
                 className="absolute inset-0 h-full w-full object-cover"
-                // src={Logo}
+                src={Logo}
+                // src="/images/Dr4.jfif"
                 alt=""
                 sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
               />
