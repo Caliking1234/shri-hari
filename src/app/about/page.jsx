@@ -67,7 +67,7 @@ const Page = () => {
       </div>
       <Slider1/>
       <Ouraim/>
-      <Whyus/>
+      {/* <Whyus/> */}
       
 
     

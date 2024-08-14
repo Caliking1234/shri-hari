@@ -28,7 +28,7 @@ const PrevArrow = (props) => (
 const products = [
   {
     id: 1,
-    img: "/images/Dr1.jpeg",
+    img: "/images/Dr1.jfif",
     name: "Dr Vivek Sharma",
     price: "Cataract, Cornea & Refractive Surgeon  ",
     exp:"M.B.B.S, M.S (Gold Medal), DNB ,Fellowship in Cornea & External Disease (LVPEI Hyd.)",
@@ -36,7 +36,7 @@ const products = [
   },
   {
     id: 2,
-    img: "/images/Dr2.png",
+    img: "/images/Dr2.jfif",
     name: "Dr. Rohini Grover",
     price: "Senior consultant opthalmologist and vitreoretinal surgeon ",
     exp:"Mbbs ,DNB ( ophthalmology) , Fnb  ( vitreoretinal surgeon ) , FICO (UK)",
@@ -44,21 +44,21 @@ const products = [
   },
   {
     id: 3,
-    img: "/images/Dr3.png",
+    img: "/images/Dr3.jfif",
     name: "Dr. Pooja Shukla ",
     price: "Specialist in cataract and corneal disease ",
     exp:"Mbbs , DNB , FSSN ",
   },
   {
     id: 4,
-    img: "/images/Dr1.jpeg",
+    img: "/images/Dr1.jfif",
     name: "Dr. Shilpa taneja mittal ",
     price: "Facial plastic and aesthetic surgeon ",
     exp:"MBBS , DNB , FICO , MNAMS , FAEH",
   },
   {
     id: 5,
-    img: "/images/Dr1.jpeg",
+    img: "/images/Dr1.jfif",
     name: "Dr. Jyoti batra ",
     price: "Oculoplasty surgeon ",
     exp: "Mbbs ( AIIMS) , MD ( AIIMS) FLVPET ( oculoplasty ) , DNB , FACIO",
@@ -111,7 +111,7 @@ const Slider1 = () => {
         </h1>
       <Slider {...settings}>
         {products.map((item, index) => (
-          <div key={index} className=" max-w-xs relative hover:bg-blue-800 bg-orange-400 rounded-xl bg-clip-padding  text-white ">
+          <div key={index} className=" max-w-xs relative h-[55vh] lg:h-[65vh] hover:bg-blue-800 bg-orange-400 rounded-xl bg-clip-padding  text-white ">
             <div className="  hover:shadow transition-all duration-300 relative group">
               <Image
               height={750}

@@ -15,12 +15,12 @@ const AboutSection = () => {
         </h1>
       </div>
       <div className=" w-full h-full flex flex-col md:flex-row relative py-5">
-        <div className=" w-full md:w-[40%] h-[70vh] overflow-hidden">
+        <div className=" w-full md:w-[40%] lg:h-[70vh] overflow-hidden">
           <Image
             objectFit="cover"
             src={img2}
             alt="abc"
-            className="w-[90%] mx-auto lg:w-[95%] h-[40vh] lg:h-[70vh] "
+            className="w-[90%] mx-auto lg:w-[95%] lg:h-[70vh] "
           />
         </div>
 
