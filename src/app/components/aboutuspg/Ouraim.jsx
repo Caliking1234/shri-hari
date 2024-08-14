@@ -15,7 +15,7 @@ const Ouraim = () => {
         aria-labelledby="author-title"
         className="relative scroll-mt-14  pb-3 pt-8 sm:scroll-mt-32 sm:pb-16 sm:pt-10 lg:pt-16"
       >
-        <h1 className="text-5xl lg:text-6xl text-[#233976] font-extrabold text-center mx-auto justify-center">
+        <h1 className="text-5xl lg:text-6xl text-[#233976] font-extrabold text-center mx-auto ">
           Dr Vivek Sharma <br/>
           <span className="text-xl">Founder</span>
         </h1>
@@ -33,7 +33,7 @@ const Ouraim = () => {
                 sizes="(min-width: 1024px) 18rem, (min-width: 768px) 16rem, 11rem"
               />
             </div>
-            <div className="px-4 py-10  text-justify sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
+            <div className="px-4 py-10   sm:px-10 sm:py-16 md:py-20 lg:px-20 lg:py-32">
               <p className="mt-8 font-display text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl">
                 {/* Founder */}
                 Founder & Director <br/> of SHRIHARI EYE CARE <br/> & LASER CENTRE
