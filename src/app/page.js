@@ -12,9 +12,9 @@ export default function Home() {
       <Services />
       <HomePageBanner />
       <AboutSection />
-      <div className=" w-full flex-col px-5 pb-10">
-        <div className=" text-[#21397A] text-left">
-          <h1 className=" text-6xl font-semibold">Find Us Here</h1>
+      <div className=" w-full flex-col px-5 my-14 ">
+        <div className=" text-[#21397A] mx-auto justify-center text-center">
+          <h1 className=" text-4xl lg:text-6xl font-semibold  ">Find Us Here</h1>
         </div>
         <div className=" w-full flex flex-col md:flex-row items-center justify-around py-5 gap-y-8">
           <div className=" w-fit flex flex-col items-center justify-center">

@@ -28,6 +28,7 @@ const Navbar = () => {
             height={100}
             src={GGLogo}
             className="h-[100px] aspect-auto py-1"
+            alt="p"
           />
           {/* <div className="flex flex-col">
             <h1 className=" text-lg sm:text-xl font-bold text-[#223A79]">

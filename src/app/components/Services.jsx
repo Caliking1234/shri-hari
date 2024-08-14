@@ -34,7 +34,7 @@ const Services = () => {
   return (
     <div className=" w-full ">
       <div className=" w-full min-h-screen flex flex-col px-6 md:px-10 py-10 bg-white relative">
-        <h1 className=" w-full text-left text-3xl sm:text-5xl text-[#233976] font-bold tracking-wider overflow-hidden py-10 z-10">
+        <h1 className=" w-full text-center text-3xl sm:text-5xl text-[#233976] font-bold tracking-wider overflow-hidden py-10 z-10">
           Our Services
         </h1>
         <div className=" w-full h-full hidden sm:block absolute top-0 left-0">

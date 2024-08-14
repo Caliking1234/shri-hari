@@ -1,7 +1,7 @@
 import Image from "next/image";
 const CardDisplay = ({ serviceName, ImageLink, servicedescp, idx }) => {
   return (
-    <div className="relative group w-[90%] md:w-3/4 mx-auto h-[450px] md:h-[300px] px-3">
+    <div className="relative group w-[100%] md:w-3/4 mx-auto h-[450px] md:h-[300px] px-3">
       <div
         className={
           idx % 2 == 0
@@ -12,13 +12,14 @@ const CardDisplay = ({ serviceName, ImageLink, servicedescp, idx }) => {
         <div className=" h-[200px] w-full md:h-full">
           <Image
             src={ImageLink}
-            width={300}
-            height={300}
+            width={750}
+            height={750}
             className=" rounded-md w-full h-[200px] md:h-full"
+            alt="p"
           />
         </div>
-        <div className=" w-full p-2 overflow-y-auto">
-          <h1 className=" text-left font-bold text-lg text-[#233976]">
+        <div className=" w-full p-4 overflow-y-auto">
+          <h1 className=" text-left mb-6 font-bold text-2xl lg:text-4xl text-[#233976]">
             {serviceName}
           </h1>
           <p className=" text-left text-xs md:text-sm text-neutral-500">

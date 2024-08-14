@@ -13,7 +13,7 @@ const HomepageBanner = () => {
       <div className=" w-full h-fit grid sm:grid-cols-2 md:grid-cols-4 gap-5 z-10">
         <div className=" flex flex-col items-center justify-center">
           <div>
-            <span className=" text-lg sm:text-3xl text-white tracking-widest font-bold">
+            <span className=" text-4xl lg:text-6xl text-white tracking-widest font-bold">
               60000+
             </span>
           </div>
@@ -25,7 +25,7 @@ const HomepageBanner = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <div>
-            <span className=" text-lg sm:text-3xl text-white tracking-widest font-bold">
+            <span className=" text-4xl lg:text-6xl text-white tracking-widest font-bold">
               2
             </span>
           </div>
@@ -37,7 +37,7 @@ const HomepageBanner = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <div>
-            <span className=" text-lg sm:text-3xl text-white tracking-widest font-bold">
+            <span className=" text-4xl lg:text-6xl text-white tracking-widest font-bold">
               30+
             </span>
           </div>
@@ -49,7 +49,7 @@ const HomepageBanner = () => {
         </div>
         <div className=" flex flex-col items-center justify-center">
           <div>
-            <span className=" text-lg sm:text-3xl text-white tracking-widest font-bold">
+            <span className=" text-4xl lg:text-6xl text-white tracking-widest font-bold">
               30000+
             </span>
           </div>
